@@ -5,11 +5,13 @@
 
 body {
 	background:
-	#202024 url(./img/blik.png);
+	#202024 url(../img/blik.png) no-repeat right top;
+	background-size: 100%;
 	color: #F6C866;
 	text-align: center;
 	font-size: 25px;
 	font-family: Roboto;
+	background-position-y: -750px;
 }
 
 .text-for-btn {
