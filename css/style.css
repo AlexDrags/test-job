@@ -5,18 +5,32 @@
 
 body {
 	background:
-	#202024 url(../img/blik.png) no-repeat right top;
-	background-size: 100%;
+	#202024 url(../img/blik.png) no-repeat right -1000px;
 	color: #F6C866;
 	text-align: center;
 	font-size: 25px;
 	font-family: Roboto;
-	background-position-y: -750px;
+	background-size: cover;
+	position: relative;
+}
+
+.planet,
+.eyes {
+	position: absolute;
+}
+.planet {
+	left: 5%;
+	bottom: 2%;
+}
+.eyes {
+	bottom: 10%;
+	right: 5%;
 }
 
 .text-for-btn {
 	font-size: 25px;
 	font-weight: 400;
+	margin-bottom: 40px;
 }
 .smol-size {
 	color: rgba(255, 255, 255, 0.6);
@@ -26,10 +40,15 @@ body {
 .bad-script {
 	font-family: Bad Script;
 	color: #FFFFFF;
+	padding-bottom: 80px;
+ 	padding-top: 80px;
 }
 
-span {
+.upper {
 	text-transform: uppercase;
+}
+.white {
+	color: #FFFFFF;
 }
 
 [type=button]{
@@ -40,17 +59,56 @@ span {
 	color: #FFFFFF;
 	font-size: 23px;
 	border-width: 0px;
+	margin-bottom: 34px;
 }
 
-.star-face {
+.star{
 	display: inline-block;
 	width: 340px;
 	height: 340px;
 	background: 
-	url(../img/face.png) center no-repeat,
 	url(../img/bigVector.svg) center no-repeat;
 	opacity: 0.5;
 	/*background-position: center center;*/
 	/*background-repeat: no-repeat;*/
 	
+}
+.face {
+	position: relative;
+	top: 15%;
+}
+
+.hands {
+	display: inline-block;
+	width: 443px;
+	height: 438px;
+	border:1px solid#FFFFFF;
+	overflow: visible; 
+	padding-bottom: 55px;
+}
+
+.hands img {
+	top: -63px;
+	position: relative;
+}
+
+.form-quest {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.big-foto {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1440px;
+	height: 606px;
+	background: url(../img/big-foto.png) no-repeat center;
+}
+
+.rune {
+	padding-bottom: 150px;
 }
