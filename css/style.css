@@ -6,15 +6,47 @@
 body {
 	background-color: #202024;
 	color: #F6C866;
+	text-align: center;
+	font-size: 25px;
+	font-family: Roboto;
 }
 
-div {
-	
+.text-for-btn {
+	font-size: 25px;
+	font-weight: 400;
+}
+.smol-size {
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 16px;
+}
+
+.bad-script {
+	font-family: Bad Script;
+	color: #FFFFFF;
+}
+
+span {
+	text-transform: uppercase;
+}
+
+[type=button]{
+	border-radius: 50px;
+	width: 310px;
+	height: 70px;
+	background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
+	color: #FFFFFF;
+	font-size: 23px;
+	border-width: 0px;
+}
+
+.star-face {
+	display: inline-block;
 	width: 340px;
 	height: 340px;
 	background-image: 
-	url(../img/montage_area.png),
-	url(../img/face.png);
+	url(../img/face.png),
+	url(../img/bigVector.svg);
+	
 	background-position: center center;
 	background-repeat: no-repeat;
 	
