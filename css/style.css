@@ -1,8 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #202024;
+	color: #F6C866;
+}
+
 div {
 	
 	width: 340px;
 	height: 340px;
-	background-image: url(./img/face.png);
+	background-image: 
+	url(../img/montage_area.png),
+	url(../img/face.png);
 	background-position: center center;
-
+	background-repeat: no-repeat;
+	
 }
