@@ -14,24 +14,23 @@ body {
 
 header {
 	padding-top: 40px;
-	background: url(../img/blik.png) no-repeat right -583px;
 	background-size: cover;
+	background-image: url(../img/blik.png);
+	background-repeat-x: no-repeat;
+	background-position-y: center;
 }
 /* Стили лица в звезде в хедере */
 .star{
-	display: inline-block;
-	width: 371px;
-	height: 345px;
-	background: 
-	url(../img/bigVector.svg) center no-repeat;
-	opacity: 0.5;
-	z-index: 1;
+	position: relative;
 }
 
-.face {
-	position: relative;
-	top: 15%;
-	z-index: 5;
+.star__face {
+	position: absolute;
+	left: calc(50% - 119px);
+	top: calc(50% - 123px);
+}
+.star__star {
+	opacity: 0.5;
 }
 /* ----------------------------- */
 /* Стили планеты и глаза в низу страницы */
@@ -58,7 +57,8 @@ header {
 
 [type=button]{
 	border-radius: 50px;
-	width: 310px;
+	width: 100%;
+	max-width: 310px;
 	height: 70px;
 	background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
 	color: #FFFFFF;
@@ -76,16 +76,14 @@ header {
 }
 
 .top-form {
-	margin-bottom: 146px;	
+	margin-bottom: 146px;
 }
 /* ----------------------------- */
 
 .hands {
 	display: inline-block;
-	width: 442px;
-	height: 437px;
 	border:1px solid#FFFFFF;
-	overflow: visible; 
+	overflow: visible;
 	padding-bottom: 55px;
 }
 
@@ -98,7 +96,7 @@ header {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: 1440px;
+	width: 100%;
 	height: 606px;
 	background: url(../img/big-foto.png) no-repeat center;
 	margin-bottom: 110px;
@@ -154,6 +152,7 @@ header {
 button {
 	position: relative;
     overflow: hidden;
+	cursor: pointer;
 }
 
 button .flare {
@@ -176,26 +175,4 @@ button .flare {
     100% {
         left: 150%;
     }
-}
-/*------------------------------*/
-@media screen
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {
-
-	body{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: baseline;
-	}
-
-	header {
-		padding-top: 40px;
-		background-position:  right -371px;
-		background-size: 100%;
-	}
-	.eyes {
-		right: -40%;
-		bottom: 8%;
-		}
 }
