@@ -140,3 +140,58 @@ header {
 	padding-bottom: 150px;
 	padding-top: 105px;
 }
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+	width: 310px;
+	margin-bottom: 35px;
+}
+
+.button {
+    background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 10px;
+    position: relative;
+    overflow-x: hidden;
+
+	border-radius: 50px;
+	width: 310px;
+	height: 70px;
+}
+
+a {
+padding: 0;
+align-items: center;
+display: inline-flex;
+justify-content: center;
+}
+
+.button .flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    transform: skewX(-45deg);
+    animation: flareAnimation;
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 3s infinite linear;
+}
+
+
+
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
