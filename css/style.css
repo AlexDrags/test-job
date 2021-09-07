@@ -17,7 +17,22 @@ header {
 	background: url(../img/blik.png) no-repeat right -583px;
 	background-size: cover;
 }
+/* Стили лица в звезде в хедере */
+.star{
+	display: inline-block;
+	width: 371px;
+	height: 345px;
+	background: 
+	url(../img/bigVector.svg) center no-repeat;
+	opacity: 0.5;
+}
 
+.face {
+	position: relative;
+	top: 15%;
+}
+/* ----------------------------- */
+/* Стили планеты и глаза в низу страницы */
 .planet,
 .eyes {
 	position: absolute;
@@ -30,12 +45,38 @@ header {
 	bottom: 12%;
 	right: 5%;
 }
+/* ----------------------------- */
 
+/* #Стили текста и кнопок ДА - НЕТ */
 .text-for-btn {
 	font-size: 25px;
 	font-weight: 400;
 	margin-bottom: 46px;
 }
+
+[type=button]{
+	border-radius: 50px;
+	width: 310px;
+	height: 70px;
+	background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
+	color: #FFFFFF;
+	font-size: 23px;
+	border-width: 0px;
+	margin-bottom: 34px;
+}
+
+.form-quest {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 23px;
+	margin-bottom: 35px;
+}
+
+.top-form {
+	margin-bottom: 146px;	
+}
+/* ----------------------------- */
 .smol-size {
 	color: rgba(255, 255, 255, 0.6);
 	font-size: 16px;
@@ -66,34 +107,6 @@ header {
 .white {
 	color: #FFFFFF;
 }
-/* #Стили кнопок */
-
-[type=button]{
-	border-radius: 50px;
-	width: 310px;
-	height: 70px;
-	background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
-	color: #FFFFFF;
-	font-size: 23px;
-	border-width: 0px;
-	margin-bottom: 34px;
-}
-
-.star{
-	display: inline-block;
-	width: 371px;
-	height: 345px;
-	background: 
-	url(../img/bigVector.svg) center no-repeat;
-	opacity: 0.5;
-	/*background-position: center center;*/
-	/*background-repeat: no-repeat;*/
-	
-}
-.face {
-	position: relative;
-	top: 15%;
-}
 
 .hands {
 	display: inline-block;
@@ -107,18 +120,6 @@ header {
 .hands img {
 	top: -75px;
 	position: relative;
-}
-
-.form-quest {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 23px;
-	margin-bottom: 35px;
-}
-
-.top-form {
-	margin-bottom: 146px;	
 }
 
 .big-foto {
