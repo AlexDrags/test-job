@@ -4,14 +4,18 @@
 }
 
 body {
-	background:
-	#202024 url(../img/blik.png) no-repeat right -1000px;
+	background-color:#202024;
 	color: #F6C866;
 	text-align: center;
 	font-size: 25px;
-	font-family: Roboto;
-	background-size: cover;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
 	position: relative;
+}
+
+header {
+	padding-top: 40px;
+	background: url(../img/blik.png) no-repeat right -583px;
+	background-size: cover;
 }
 
 .planet,
@@ -20,28 +24,40 @@ body {
 }
 .planet {
 	left: 5%;
-	bottom: 2%;
+	bottom: 1.5%;
 }
 .eyes {
-	bottom: 10%;
+	bottom: 12%;
 	right: 5%;
 }
 
 .text-for-btn {
 	font-size: 25px;
 	font-weight: 400;
-	margin-bottom: 40px;
+	margin-bottom: 46px;
 }
 .smol-size {
 	color: rgba(255, 255, 255, 0.6);
 	font-size: 16px;
 }
 
+.header-text,
+.smol-size {
+	color:rgba(255, 255, 255, 0.6);
+	letter-spacing: 0.1em;
+}
+
+.header-text {
+	padding-top: 15px;
+	padding-bottom: 65px;
+}
+
 .bad-script {
-	font-family: Bad Script;
+	font-family: 'Bad Script', cursive;
 	color: #FFFFFF;
 	padding-bottom: 80px;
  	padding-top: 80px;
+    line-height: 35px;
 }
 
 .upper {
@@ -50,6 +66,7 @@ body {
 .white {
 	color: #FFFFFF;
 }
+/* #Стили кнопок */
 
 [type=button]{
 	border-radius: 50px;
@@ -64,8 +81,8 @@ body {
 
 .star{
 	display: inline-block;
-	width: 340px;
-	height: 340px;
+	width: 371px;
+	height: 345px;
 	background: 
 	url(../img/bigVector.svg) center no-repeat;
 	opacity: 0.5;
@@ -80,15 +97,15 @@ body {
 
 .hands {
 	display: inline-block;
-	width: 443px;
-	height: 438px;
+	width: 442px;
+	height: 437px;
 	border:1px solid#FFFFFF;
 	overflow: visible; 
 	padding-bottom: 55px;
 }
 
 .hands img {
-	top: -63px;
+	top: -75px;
 	position: relative;
 }
 
@@ -96,8 +113,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 23px;
+	margin-bottom: 35px;
+}
+
+.top-form {
+	margin-bottom: 146px;	
 }
 
 .big-foto {
@@ -107,8 +128,14 @@ body {
 	width: 1440px;
 	height: 606px;
 	background: url(../img/big-foto.png) no-repeat center;
+	margin-bottom: 110px;
+}
+
+.big-foto p {
+	padding-top: 35px;
 }
 
 .rune {
 	padding-bottom: 150px;
+	padding-top: 105px;
 }
