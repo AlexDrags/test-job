@@ -25,11 +25,13 @@ header {
 	background: 
 	url(../img/bigVector.svg) center no-repeat;
 	opacity: 0.5;
+	z-index: 1;
 }
 
 .face {
 	position: relative;
 	top: 15%;
+	z-index: 5;
 }
 /* ----------------------------- */
 /* Стили планеты и глаза в низу страницы */
@@ -194,4 +196,24 @@ justify-content: center;
     100% {
         left: 150%;
     }
+}
+
+@media screen
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+
+	body{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	header {
+		padding-top: 40px;
+		background-position:  right -371px;
+		
+		background-size: 100%;
+	}
+	.eyes {
+		right: -18%;
 }
