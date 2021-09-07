@@ -79,36 +79,6 @@ header {
 	margin-bottom: 146px;
 }
 /* ----------------------------- */
-.smol-size {
-	color: rgba(255, 255, 255, 0.6);
-	font-size: 16px;
-}
-
-.header-text,
-.smol-size {
-	color:rgba(255, 255, 255, 0.6);
-	letter-spacing: 0.1em;
-}
-
-.header-text {
-	padding-top: 15px;
-	padding-bottom: 65px;
-}
-
-.bad-script {
-	font-family: 'Bad Script', cursive;
-	color: #FFFFFF;
-	padding-bottom: 80px;
- 	padding-top: 80px;
-    line-height: 35px;
-}
-
-.upper {
-	text-transform: uppercase;
-}
-.white {
-	color: #FFFFFF;
-}
 
 .hands {
 	display: inline-block;
@@ -142,49 +112,43 @@ header {
 	position: relative;
 }
 
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-	width: 310px;
-	margin-bottom: 35px;
-}
-/*
-.button {
-    background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 400;
-    border-radius: 10px;
-    position: relative;
-    overflow-x: hidden;
-
-	border-radius: 50px;
-	width: 310px;
-	height: 70px;
+/* Мелкие стили по тексту сайта */
+.smol-size {
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 16px;
 }
 
-a {
-padding: 0;
-align-items: center;
-display: inline-flex;
-justify-content: center;
+.header-text,
+.smol-size {
+	color:rgba(255, 255, 255, 0.6);
+	letter-spacing: 0.1em;
 }
 
-.button .flare {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 45px;
-    transform: skewX(-45deg);
-    animation: flareAnimation;
-    left: -150%;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
-    animation: flareAnimation 3s infinite linear;
+.header-text {
+	padding-top: 15px;
+	padding-bottom: 65px;
 }
-*/
+
+.bad-script {
+	font-family: 'Bad Script', cursive;
+	color: #FFFFFF;
+	padding-bottom: 80px;
+ 	padding-top: 80px;
+    line-height: 35px;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+.white {
+	color: #FFFFFF;
+}
+/*--------------------------------------*/
+
+.textnew {
+	display: none;
+}
+/* Стили для блика у кнопок */
 button {
 	position: relative;
     overflow: hidden;
@@ -203,9 +167,6 @@ button .flare {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
     animation: flareAnimation 3s infinite linear;
 }
-
-
-
 
 @keyframes flareAnimation {
     0% {
