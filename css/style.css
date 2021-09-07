@@ -19,19 +19,16 @@ header {
 }
 /* Стили лица в звезде в хедере */
 .star{
-	display: inline-block;
-	width: 371px;
-	height: 345px;
-	background: 
-	url(../img/bigVector.svg) center no-repeat;
-	opacity: 0.5;
-	z-index: 1;
+	position: relative;
 }
 
-.face {
-	position: relative;
-	top: 15%;
-	z-index: 5;
+.star__face {
+	position: absolute;
+	left: calc(50% - 119px);
+	top: calc(50% - 123px);
+}
+.star__star {
+	opacity: 0.5;
 }
 /* ----------------------------- */
 /* Стили планеты и глаза в низу страницы */
