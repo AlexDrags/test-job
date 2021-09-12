@@ -30,6 +30,9 @@ header {
 .star__star {
 	opacity: 0.5;
 }
+.star_circle {
+	display: none;
+}
 /* ----------------------------- */
 /* Стили планеты и глаза в низу страницы */
 .planet,
@@ -179,20 +182,75 @@ button .flare {
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
 
-	body{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: baseline;
+	.line {
+		width: 50%;
 	}
 
-	header {
-		padding-top: 40px;
-		background-position:  right -371px;
-		background-size: 100%;
+	.text-for-btn,
+	[type=button],
+	.hands p,
+	.big-foto p {
+		font-size: 16px;
+	}
+	[type=button] {
+		width: 50%;
+		height: 40px;
+	}
+	.eyes,
+	.planet {
+		width: 10%;
 	}
 	.eyes {
-		right: -40%;
-		bottom: 8%;
-		}
+		bottom: 10%;
+		right: -5%;
+	}
+	.planet {
+		left: -5%;
+	}
+	.big-foto {
+		width: 100%;
+	}
+	.hands {
+		width: 50%;
+	}
 }
+
+@media screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px)
+and (orientation : landscape) { 
+	.star__star,
+	.star__face {
+		display: none;
+	}
+	.star_circle {
+		display: inline-block;
+	}
+	.text-for-btn,
+	[type=button],
+	.hands p,
+	.big-foto p {
+		font-size: 16px;
+	}
+	[type=button] {
+		width: 70%;
+		height: 40px;
+	}
+	.eyes,
+	.planet {
+		width: 20%;
+	}
+	.eyes {
+		bottom: 10%;
+		right: -5%;
+	}
+	.planet {
+		left: -5%;
+	}
+	.big-foto {
+		width: 100%;
+	}
+	.hands {
+		width: 95%;
+	}
+	}
