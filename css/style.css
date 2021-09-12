@@ -17,6 +17,9 @@ header {
 	background: url(../img/blik.png) no-repeat right -583px;
 	background-size: cover;
 }
+main {
+	padding-bottom: 100px;
+}
 /* Стили лица в звезде в хедере */
 .star{
 	position: relative;
